@@ -20,5 +20,8 @@ namespace LemonadeStand_3DayStarter
         }
 
         // member methods (CAN DO)
-    }
+    } // player  needs to purchase items from store mabye use inhertance of items to store and items to player
+      // if forecast is sunny purchace more lemonade 
+      // Else if forecast is rainy purchace less lemonade 
+      // 
 }

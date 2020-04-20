@@ -55,6 +55,7 @@
     <Compile Include="SugarCube.cs" />
     <Compile Include="UserInterface.cs" />
     <Compile Include="Wallet.cs" />
+    <Compile Include="WeatherSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
