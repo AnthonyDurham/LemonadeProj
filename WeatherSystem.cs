@@ -9,32 +9,36 @@ namespace LemonadeStand_3DayStarter
     class WeatherSystem
     {
         // member variables (HAS A)
-      private  List<string> forecastOptions = new List<string>() { "sunny", "rainy", "overcast" };
-       public  List<int> tempature = new List<int>() { 40, 80 };
+        private List<string> forecastOptions;
+        public List<int> tempature;
         public string dailyForecast;
         public int dailyTemperature;
+        public string weather;
+    }
+
+
+    // constructor (SPAWNER)
+    public WeatherSystem()
+
+    {
+        forecastOptions = new List<string>() { "sunny", "rainy", "overcast" };
+        tempature = new List<int>() { 40, 80 };
+        weather = DetermineWeather();
+
+    }
 
 
 
-        // constructor (SPAWNER)
-        public WeatherSystem(string forecastOptions,int tempature)
-        {
-            string dailyForecast = forecastOptions;
-            int tempature = dailyTempature;
 
+    // member methods (CAN DO)
+    public string DetermineWeather()
+    {
+        Random rand = new Random();
+        int randomNumber = rand.Next(weather.count);
+        return weather[randomNumber];
+    } 
 
-
-        }
-
-
-
-
-        // member methods (CAN DO)
-        string dailyForecast = rnd.Next(4);
-       
-    }   
-    
-
+}
 
     
       
