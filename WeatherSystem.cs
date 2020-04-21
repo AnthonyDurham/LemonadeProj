@@ -9,35 +9,35 @@ namespace LemonadeStand_3DayStarter
     class WeatherSystem
     {
         // member variables (HAS A)
-        List<string> forecastOptions = new List<string>();
-        List<int> tempature = new List<int>() { 40, 80 };
-        string daysoftheweek;
+      private  List<string> forecastOptions = new List<string>() { "sunny", "rainy", "overcast" };
+       public  List<int> tempature = new List<int>() { 40, 80 };
+        public string dailyForecast;
+        public int dailyTemperature;
 
 
 
         // constructor (SPAWNER)
-        public WeatherSystem()
+        public WeatherSystem(string forecastOptions,int tempature)
         {
-            forecastOptions.Add("sunny");
-            forecastOptions.Add("rainy");
-            foreach (int tempature in tempature) ;
-            daysoftheweek = "Mon, Tue, Wen, Thur, Fri";
+            string dailyForecast = forecastOptions;
+            int tempature = dailyTempature;
+
+
 
         }
+
 
 
 
         // member methods (CAN DO)
-    }   //if forecast is sunny tempature is 80 else if tempature is 45 forecast is rainy 
-        // days of the weeek if days of the week go in order then make forecast random         
+        string dailyForecast = rnd.Next(4);
+       
+    }   
+    
 
 
-    int tempature = 80;
-    if (tempature >= 80);
-        {
-        
-        }
-
+    
+      
 
 
 
@@ -49,5 +49,5 @@ namespace LemonadeStand_3DayStarter
    
 
         
-}
+
 

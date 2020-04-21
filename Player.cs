@@ -6,22 +6,29 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Player
+    class Player:Store
     {
         // member variables (HAS A)
+        public string name;
         public Inventory inventory;
         public Wallet wallet;
-
+        public Recipe recipe;
+        public Pitcher pitcher;
+        
         // constructor (SPAWNER)
         public Player()
         {
+            name = "server";
             inventory = new Inventory();
             wallet = new Wallet();
+            recipe = new Recipe();
+            pitcher = new Pitcher();
+
+
         }
 
         // member methods (CAN DO)
-    } // player  needs to purchase items from store mabye use inhertance of items to store and items to player
-      // if forecast is sunny purchace more lemonade 
-      // Else if forecast is rainy purchace less lemonade 
-      // 
+
+        // I want to be able to go to the store to purchase items(lemons, sugar, ice, and cups) so that I can make lemonade to sell. 
+    } 
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Pitcher
+    class Pitcher 
     {
+
+        // member variables (HAS A)
+        public int cupsLeftInPitcher;
+
+        // constructor (SPAWNER)
+
+
+        // member methods (CAN DO)
+
     }
 }
