@@ -6,23 +6,46 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Customer
+    class Customer 
     {
 
         // member variables (HAS A)
         private List<string> names;
         public string name;
-
+        public int daiyBuyingDrinks;
+        public Random rand;
+        public int demand;
 
         // constructor (SPAWNER)
+        public Customer()
+        {
+            names = new List<string>() { "happy", "chubbs", "bob", "shooter" };
+            daiyBuyingDrinks = PurchaseCups();
+            demand = new Demand();
+
+        }
+
+
 
 
         // member methods (CAN DO)
-        //customer  needs to purchase items from store mabye use inhertance 
-      // if forecast is sunny purchace more lemonade 
-      // Else if forecast is rainy purchace less lemonade 
+        public void PurchaseCups()
+        {
+            int randomNumber = rand.Next(names.Count);
+            name = names[randomNumber];
+             
+
+            
+        }
+        public int Demand()
+        {
+            
+
+        }
+
     }
-}
+ }   
+
 
 
     

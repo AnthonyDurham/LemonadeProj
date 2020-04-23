@@ -9,21 +9,39 @@ namespace LemonadeStand_3DayStarter
     class Day
     {
         // member variables (HAS A)
-       /* weather forcast*/   public List<string> forecastOptions = new List<string>();
+        /* weather forcast*/
+        
         public string Days;
         public List<Customer> customers;
         WeatherSystem dailyWeather;
+        public bool dailySales;
+
+
+        // constructor (SPAWNER)
         public Day()
         {
             dailyWeather = new WeatherSystem();
+            dailySales = SalesBase();
+
         }
 
-        // constructor (SPAWNER)
-       
+
+
 
         // member methods (CAN DO)
-         // each day will have a forecast that is ramdomly selected 
-         // not sure if my day of temp needs to be and array of a int 
-    } for days = forecastOptions 
+        public void SalesBase()
+        {
+
+
+
+        }
+        
+
+
+        
+       
+        
+         
+    } 
 
 }

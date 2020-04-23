@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_3DayStarter
 {
-    class Player:Store
+    class Player
     {
         // member variables (HAS A)
         public string name;
@@ -18,17 +18,21 @@ namespace LemonadeStand_3DayStarter
         // constructor (SPAWNER)
         public Player()
         {
-            name = "server";
+            
             inventory = new Inventory();
             wallet = new Wallet();
             recipe = new Recipe();
             pitcher = new Pitcher();
-
+            
 
         }
 
         // member methods (CAN DO)
+       
+        
+          
 
-        // I want to be able to go to the store to purchase items(lemons, sugar, ice, and cups) so that I can make lemonade to sell. 
+        
+        
     } 
 }
